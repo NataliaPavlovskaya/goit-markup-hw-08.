@@ -1,0 +1,88 @@
+.header {
+    border: 1px solid var(--header-border-color);
+}
+.container>.header-nav {
+    @include flex (flex, center, center);
+}
+.header>.container {
+    @include flex (flex, center, center);
+}
+.nav{
+    display: flex;
+}
+.nav__item {
+    margin-right: 50px;
+    display: block;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+.nav__link--current {
+    color: var(--accent-color);
+
+    @include font (14px, 1.14, 0.02em, 500);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    position: relative;
+}
+.nav__link--current.active::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+}
+.nav__link {
+    color: var(--tittle-text-color);
+
+    @include font (14px, 1.14, 0.02em, 500);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition: color var(--animation);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+// .header-auth-nav {
+    
+// }
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav__item {
+    margin-right: 50px;
+    display: block;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.auth-nav__info {
+    color: var(--primary-text-color);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include font (14px, 1.14, 0.02em, 500);
+    @include flex (flex, center, center);
+    transition: color var(--animation);
+    &:hover ,
+    &:focus {
+    color:var(--accent-color);
+    }
+}
+.auth-nav__info {
+    .auth-nav__icon{
+        fill: currentColor;
+    } 
+}
+.auth-nav__icon{
+    margin-right: 10px;
+}

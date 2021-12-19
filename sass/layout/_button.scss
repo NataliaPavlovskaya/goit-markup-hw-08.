@@ -1,0 +1,56 @@
+.button {
+    @include flex (flex, center, center);
+    margin-bottom: 50px;
+}
+.btn-item {
+    margin-left: 8px;
+}
+.button-link {
+    color: var(--tittle-text-color);
+    background-color: var(--section-command-color);
+
+    font-family: inherit;
+    @include font (16px, 1.16, 0.03em, 500);
+    cursor: pointer;
+    padding: 6px 22px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 73px; 
+    text-align: center;
+    transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);   
+    &:hover,
+    &:focus{
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+    
+        font-family: inherit;
+        @include font (16px, 1.16, 0.03em, 500);
+        display: inline-block;
+        padding: 6px 22px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        min-width: 73px; 
+        cursor: pointer;
+        box-shadow: 1px 4px 6px 0px #00000029, 
+        0px 4px 4px 0px #0000000F,
+        0px 1px 1px 0px #0000001F;
+    }
+}
+.button-link-current{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    font-family: inherit;
+    @include font (16px, 1.16, 0.03em, 500);
+    display: inline-block;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 73px; 
+    cursor: pointer;
+    box-shadow: 1px 4px 6px 0px #00000029, 
+    0px 4px 4px 0px #0000000F,
+    0px 1px 1px 0px #0000001F;
+
+}

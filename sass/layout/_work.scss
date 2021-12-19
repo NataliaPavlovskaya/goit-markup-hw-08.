@@ -1,0 +1,23 @@
+.section-work {
+    padding-bottom: 94px;
+}
+.work-list {
+    display: flex;
+}
+.work-list__item {
+    width: 370px;
+    position: relative;
+}
+.work-list__top-text {
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+
+    @include font (14px, 1.17, 0.03em, 700);
+    @include flex (flex, center, center);
+    height: 70px;
+    background-color: var(--work-top-text);
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

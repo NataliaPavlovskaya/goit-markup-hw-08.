@@ -1,0 +1,74 @@
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-link {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    font-style: inherit;
+    transition: box-shadow var(--animation);  
+    &:hover,
+    &:focus{
+    cursor: pointer;
+    box-shadow: 1px 4px 6px 0px #00000029, 
+    0px 4px 4px 0px #0000000F,
+    0px 1px 1px 0px #0000001F; 
+    }
+}
+.project-top-text {
+    position: absolute;
+    color: var(--primary-white-color);
+
+    @include font (18px, 1.55, 0.03em, 400);
+    padding-left: 24px;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    background-color: var(--top-text);
+    width: 370px;
+    height: 294px;
+    transform: translateY(100%);
+    transition: transform var(--animation);
+    overflow: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;  
+    .project-link:hover &,
+    .project-link:focus & {
+        transform: translateY(0);
+    } 
+}
+.project-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 370px; 
+    &:nth-child(3n) {
+        margin-right: 0px;
+    }
+    &:nth-last-child(-n+3){
+        margin-bottom: 0px;
+    }
+}
+.project-tittle {
+    color: var(--tittle-text-color);
+    @include font (18px, 2, 0.06em, 700);
+}
+.project-text {
+    font-family: Raleway, cursive ;
+    @include font (16px, 1.87, 0.03em, 400);
+    
+    color: var(--primary-text-color);
+}
+.project-item-wrap {
+    position: relative;
+    overflow: hidden;  
+}
+.portfolio-card {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border: 1px solid #EEEEEE;
+}

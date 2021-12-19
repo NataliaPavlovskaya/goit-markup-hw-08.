@@ -1,0 +1,17 @@
+.header__logo {
+    color: var(--accent-color);
+
+    text-decoration: none;
+    font-family: Raleway, cursive;
+    @include font (26px, 1.19, 0.03em, 700);
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+}
+.header__logo--black {
+    color: var(--logo-color);
+    
+    font-family: Raleway, cursive;
+    @include font (26px, 1.19, 0.03em, 700);
+}

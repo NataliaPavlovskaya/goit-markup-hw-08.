@@ -1,0 +1,15 @@
+.footer__logo {
+    font-family: Raleway, cursive;
+    @include font (26px, 1.19, 0.03em, 700);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+
+    color: var(--accent-color);
+}
+.footer__logo--white {
+    font-family: Raleway, cursive;
+    @include font (26px, 1.19, 0.03em, 700);
+
+    color:var(--primary-white-color);
+}

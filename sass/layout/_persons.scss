@@ -1,0 +1,63 @@
+.persons-list {
+    // display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.persons-list__item {
+    // width: 270px;
+    // padding-bottom: 0px;
+    // margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc(100%/2);
+        // width: 270px;
+        padding-bottom: 0px;
+        margin-bottom: 30px;
+    }
+}
+// .persons-list__item {
+//     margin-bottom: 30px;
+//      }
+
+.persons-social {
+    width: 100%;
+    height: 120px;
+    background: var(--section-command-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    @include flex (flex, center, center);
+    & + & {
+        margin-left: 30px;
+    }
+}
+.persons-social__tittle {
+    color: var(--tittle-text-color);
+
+    @include font (14px, 1.17, 0.03em, 700);
+    text-transform: uppercase;
+
+    margin-bottom: 10px;  
+
+
+    text-align: center;
+}
+.persons-social__text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
+// .persons-social-item {
+//     width: 270px;
+//     height: 120px;
+//     background: var(--section-command-color);
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//     @include flex (flex, center, center);
+// }
+// .persons-social-item{
+//    & + & {
+//         margin-left: 30px;
+//     }
+// } 
