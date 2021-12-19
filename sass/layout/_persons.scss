@@ -1,27 +1,22 @@
 .persons-list {
-    // display: flex;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        margin:-15px;
+        margin: -15px;
     }
 }
 .persons-list__item {
-    // width: 270px;
-    // padding-bottom: 0px;
-    // margin-bottom: 30px;
-    @media screen and (min-width: 768px){
-        flex-basis: calc(100%/2-30px);
-        // width: 270px;
-        // padding-bottom: 0px;
-        // margin-bottom: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc( 100% / 2 - 30px);
+        width: 354px;
         margin:15px;
     }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc( 100% / 4 - 30px);
+    }
 }
-// .persons-list__item {
-//     margin-bottom: 30px;
-//      }
-
 .persons-social {
     width: 100%;
     height: 120px;
@@ -38,28 +33,13 @@
 
     @include font (14px, 1.17, 0.03em, 700);
     text-transform: uppercase;
-
     margin-bottom: 10px;  
-
-
     text-align: center;
+    @media screen and (min-width: 768px){
+        text-align: left;  
+    }
 }
 .persons-social__text {
     font-size: 14px;
     line-height: 1.71;
 }
-
-
-// .persons-social-item {
-//     width: 270px;
-//     height: 120px;
-//     background: var(--section-command-color);
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-//     @include flex (flex, center, center);
-// }
-// .persons-social-item{
-//    & + & {
-//         margin-left: 30px;
-//     }
-// } 
