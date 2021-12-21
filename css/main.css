@@ -589,17 +589,37 @@ textarea {
 
 .client-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .client-list__item {
   width: 170px;
   height: 92px;
+  margin: 15px;
+  flex-basis: calc( 100% / 2 - 30px);
 }
 
-.client-list__item + .client-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .client-list__item {
+    flex-basis: calc( 100% / 3 - 30px);
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list__item {
+    flex-basis: calc( 100% / 6 - 30px);
+  }
 }
 
 .client-list__link {
