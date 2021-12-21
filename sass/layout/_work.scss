@@ -1,23 +1,32 @@
+@media screen and (max-width: 1200px) {
+    .section-work{
+        display: none;
+    } 
+}
 .section-work {
-    padding-bottom: 94px;
+    padding-bottom: 94px;     
 }
 .work-list {
-    display: flex;
+display: flex;
 }
 .work-list__item {
-    width: 370px;
-    position: relative;
+width: 370px;
+position: relative;
+margin-right: 30px;
+        &:last-child {
+        margin-right: 0px;
+        }
 }
 .work-list__top-text {
-    color: var(--primary-white-color);
-    text-transform: uppercase;
+color: var(--primary-white-color);
+text-transform: uppercase;
 
-    @include font (14px, 1.17, 0.03em, 700);
-    @include flex (flex, center, center);
-    height: 70px;
-    background-color: var(--work-top-text);
-    
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+@include font (14px, 1.17, 0.03em, 700);
+@include flex (flex, center, center);
+height: 70px;
+background-color: var(--work-top-text);
+
+position: absolute;
+bottom: 0;
+width: 100%;
 }

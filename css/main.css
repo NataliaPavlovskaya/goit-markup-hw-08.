@@ -98,13 +98,23 @@ textarea {
 }
 
 .section-tittle {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--tittle-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-tittle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+  }
 }
 
 .section {
@@ -383,6 +393,12 @@ textarea {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 1200px) {
+  .section-work {
+    display: none;
+  }
+}
+
 .section-work {
   padding-bottom: 94px;
 }
@@ -394,6 +410,11 @@ textarea {
 .work-list__item {
   width: 370px;
   position: relative;
+  margin-right: 30px;
+}
+
+.work-list__item:last-child {
+  margin-right: 0px;
 }
 
 .work-list__top-text {
@@ -417,21 +438,40 @@ textarea {
   background: var(--section-command-color);
 }
 
-.command-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .command-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .command-list__item {
-  width: 270px;
+  width: 100%;
   background-color: var(--portfolio-card-border-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .command-list__item {
+    flex-basis: calc( 100% / 2 - 30px);
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-list__item {
+    flex-basis: calc( 100% / 4 - 30px);
+  }
 }
 
 .command-list__people {
   color: var(--tittle-text-color);
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   font-weight: 500;
   text-align: center;
@@ -440,7 +480,7 @@ textarea {
 
 .command-list__special {
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   font-weight: 400;
   text-align: center;

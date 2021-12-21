@@ -15,10 +15,12 @@ textarea {
 .link {
     text-decoration: none;
 }
-// .item {
-//     margin-right: 30px;
-//     &:last-child {
+// @media screen and (max-width: 1200px){
+//     .item {
+//         margin-right: 30px;
+//         &:last-child {
 //         margin-right: 0px;
+//         }
 //     }
 // }
 
