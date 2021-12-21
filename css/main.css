@@ -283,16 +283,51 @@ textarea {
 
 .hero {
   background-color: var(--background-hero-color);
-  text-align: center;
-  height: 600px;
-  max-width: 1600px;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  height: 400px;
+  max-width: 768px;
   margin: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_img.jpg");
+  padding-bottom: 188px;
+  padding-top: 128px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.hero .container {
+  width: 440px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1200px;
+    padding-bottom: 198px;
+    padding-top: 118px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.hero .container {
+  width: 440px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    margin: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_img3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .hero .container {
@@ -301,14 +336,24 @@ textarea {
 
 .hero__tittle {
   color: var(--primary-white-color);
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   font-weight: 900;
   text-transform: uppercase;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__tittle {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
 }
 
 .hero__button-primary {
@@ -316,7 +361,7 @@ textarea {
   color: var(--primary-white-color);
   font-family: inherit;
   font-size: 16px;
-  line-height: 1.16;
+  line-height: 1.8;
   letter-spacing: 0.06em;
   font-weight: 700;
   cursor: pointer;
