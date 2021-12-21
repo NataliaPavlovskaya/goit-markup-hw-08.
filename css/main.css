@@ -288,7 +288,7 @@ textarea {
   padding-bottom: 118px;
   padding-top: 128px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero_img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -304,7 +304,7 @@ textarea {
     padding-top: 118px;
     margin: auto;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_img2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero_img2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -321,7 +321,7 @@ textarea {
     padding-bottom: 200px;
     padding-top: 200px;
     margin: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_img3.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero_img3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
