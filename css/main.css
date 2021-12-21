@@ -284,9 +284,8 @@ textarea {
 .hero {
   background-color: var(--background-hero-color);
   height: 400px;
-  max-width: 768px;
   margin: auto;
-  padding-bottom: 188px;
+  padding-bottom: 118px;
   padding-top: 128px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero_img.jpg");
@@ -296,13 +295,12 @@ textarea {
 }
 
 .hero .container {
-  width: 440px;
+  width: 400px;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 1200px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
     padding-top: 118px;
     margin: auto;
     text-align: center;
@@ -311,15 +309,15 @@ textarea {
     background-position: center;
     background-size: cover;
   }
-}
-
-.hero .container {
-  width: 440px;
+  .hero .container {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
     margin: auto;
@@ -328,10 +326,9 @@ textarea {
     background-position: center;
     background-size: cover;
   }
-}
-
-.hero .container {
-  width: 696px;
+  .hero .container {
+    width: 696px;
+  }
 }
 
 .hero__tittle {
@@ -353,6 +350,7 @@ textarea {
     letter-spacing: 0.06em;
     font-weight: 900;
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -372,6 +370,15 @@ textarea {
   left: 700px;
   top: 430px;
   box-shadow: 0px 4px 4px rgba(66, 43, 43, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__button-primary {
+    font-size: 16px;
+    line-height: 1.16;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+  }
 }
 
 @media screen and (min-width: 768px) {
