@@ -811,12 +811,6 @@ textarea {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-thumb {
-    margin-right: 60px;
-  }
-}
-
 .footer > .container {
   text-align: center;
 }
@@ -838,17 +832,24 @@ textarea {
 @media screen and (min-width: 768px) {
   .footer-left-container {
     display: flex;
-    margin: 0 auto;
     width: 100%;
   }
 }
 
-.footer-container {
-  width: 232px;
-  margin-left: 124px;
-  margin-right: 124px;
-  text-align: center;
+.footer-thumb {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-thumb {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-thumb {
+    margin-right: 60px;
+  }
 }
 
 .address-list {

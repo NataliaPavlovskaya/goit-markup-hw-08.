@@ -3,18 +3,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-thumb{
-    @media screen and (min-width: 1200px) {
-        margin-right: 60px; 
-    } 
-}
+
 .footer>.container{
     text-align: center;
     @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
-        // margin: 0 auto;
-        // text-align: center;
     }
     @media screen and (min-width: 1200px){
         display: flex;
@@ -24,23 +18,19 @@
 
 .footer-left-container{
     @media screen and (min-width: 768px){
-        display: flex; 
-        margin: 0 auto; 
-        width: 100%;
+        display: flex;
+        width: 100%; 
+        
     }
 }
-.footer-container{  
-    width: 232px;
-
-    margin-left: 124px;
-    margin-right: 124px;
-    text-align: center;
+.footer-thumb{
     margin-bottom: 60px;
     @media screen and (min-width: 768px){
-        // margin:0 auto;
-    }
-
-    
+        margin-left: auto;
+    } 
+    @media screen and (min-width: 1200px) {
+        margin-right: 60px; 
+    } 
 }
 .address-list {
     color: var(--primary-white-color);
