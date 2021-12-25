@@ -825,14 +825,25 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer > .container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer-left-container {
     display: flex;
+    justify-content: space-around;
     width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-left-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 93px;
   }
 }
 
@@ -842,13 +853,13 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .footer-thumb {
-    margin-left: auto;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-thumb {
-    margin-right: 60px;
+    margin: 0px;
   }
 }
 
@@ -901,6 +912,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-icon {
+    margin: 0px;
+  }
+}
+
 .footer-icon__tittle {
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -918,6 +935,7 @@ textarea {
     line-height: 1.14;
     letter-spacing: 0.03em;
     font-weight: 700;
+    text-align: left;
   }
 }
 
@@ -974,6 +992,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-form-field {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -983,8 +1002,8 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .footer-form {
-    width: 570px;
     height: 86px;
+    margin: 0px;
   }
 }
 
@@ -1005,6 +1024,7 @@ textarea {
     line-height: 1.14;
     letter-spacing: 0.03em;
     font-weight: 700;
+    text-align: left;
   }
 }
 
@@ -1042,6 +1062,8 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-form__email {
     width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
   }
 }
 
