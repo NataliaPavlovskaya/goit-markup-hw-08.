@@ -1,0 +1,28 @@
+
+// ---------MOBIL MENU-------
+
+.menu-button{
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    .icon-cross{
+        display: none;
+    }
+}
+
+.menu-button.is-open {
+    .icon-cross{
+        display: block;
+        margin-left: auto;
+    }
+}
+.menu-button.is-open {
+    .icon-menu{
+        display: none;
+    }
+}
+
+
+
