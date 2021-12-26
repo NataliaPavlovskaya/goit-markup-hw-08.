@@ -179,27 +179,6 @@ textarea {
   color: var(--primary-white-color);
 }
 
-.menu-button {
-  display: inline-flex;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-  margin-left: auto;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
 .header {
   border: 1px solid var(--header-border-color);
   position: relative;
@@ -362,10 +341,10 @@ textarea {
   left: 0;
   background-color: #fff;
   z-index: 5;
-  padding-top: 10px;
+  padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  padding-right: 15px;
+  padding-right: 40px;
   transform: translateX(100%);
 }
 
@@ -492,6 +471,30 @@ textarea {
   display: none;
 }
 
+.js-close-menu {
+  padding: 0px;
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.js-close-menu {
+  transition: fill var(--animation);
+}
+
+.js-close-menu:hover, .js-close-menu:focus {
+  fill: var(--accent-color);
+}
+
 .hero {
   background-color: var(--background-hero-color);
   height: 400px;
@@ -517,7 +520,6 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-bottom: 118px;
     padding-top: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_img2.jpg");
     background-repeat: no-repeat;
@@ -544,7 +546,6 @@ textarea {
     height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
-    margin: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_img3.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -998,6 +999,14 @@ textarea {
   box-shadow: 1px 4px 6px 0px #00000029,  0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
 }
 
+@media screen and (min-width: 768px) {
+  .project-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .project-item {
   padding-bottom: 0px;
   margin-bottom: 30px;
@@ -1084,6 +1093,12 @@ textarea {
   padding-bottom: 20px;
   padding-right: 20px;
   border: 1px solid #EEEEEE;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    flex-grow: 1;
+  }
 }
 
 .footer {
@@ -1407,7 +1422,7 @@ textarea {
 
 .modal {
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
-  width: 528px;
+  width: 450px;
   min-height: 500px;
   background-color: var(--primary-white-color);
   position: absolute;
@@ -1416,6 +1431,12 @@ textarea {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .close-icon {
@@ -1539,7 +1560,7 @@ textarea {
 .modal-check-text {
   font-family: Roboto,sans-serif;
   text-align: left;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -1559,6 +1580,15 @@ textarea {
   justify-content: center;
   margin-bottom: 0;
   transition: border-color var(--animation);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check-text {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+  }
 }
 
 .modal-check-text:hover span,

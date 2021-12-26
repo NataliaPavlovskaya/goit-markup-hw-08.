@@ -67,7 +67,7 @@
 .modal-check-text {
     font-family: Roboto,sans-serif;
     text-align: left;
-    @include font (14px, 1.17, 0.03em, 400);
+    @include font (12px, 1.17, 0.03em, 400);
     @include flex (flex, center, center);
     span {
         width: 16px;
@@ -79,6 +79,9 @@
         margin-bottom: 0;
         transition: border-color var(--animation);
     } 
+    @media screen and (min-width: 1200px){
+        @include font (14px, 1.17, 0.03em, 400);
+    }
 }
 .modal-check-text:hover,
 .modal-check-text:focus{
