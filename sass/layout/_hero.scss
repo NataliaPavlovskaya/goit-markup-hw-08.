@@ -12,10 +12,21 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url('/images/hero_img.jpg');
+        url('../images/hero_img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url('../images/heromob_2x.jpg');
+  }
     .container {
         width: 400px;
     } 
@@ -23,18 +34,28 @@
         // max-width: 696px;
         padding-bottom: 118px;
         padding-top: 118px;
-        margin: auto;
-        text-align: center;
+        // margin: auto;
+        // text-align: center;
 
         background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url('/images/hero_img2.jpg');
+        url('../images/hero_img2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url('../images/heropl_2x.jpg');
+  }
     .container {
         width: 400px;
     } 
@@ -56,10 +77,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+      url('../images/hero_2x.jpg');
+    }
         .container {
                 width: 696px;
             }
-    } 
+        } 
     
 }
 .hero__tittle {

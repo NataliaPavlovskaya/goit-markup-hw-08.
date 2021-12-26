@@ -35,31 +35,6 @@
     }
     
 }
-.project-top-text {
-    position: absolute;
-    color: var(--primary-white-color);
-
-    @include font (18px, 1.55, 0.03em, 400);
-    padding-left: 24px;
-    padding-top: 63px;
-    padding-right: 24px;
-    padding-bottom: 63px;
-    background-color: var(--top-text);
-    width: 450px;
-    // width: 370px;   
-    height: 294px;
-    transform: translateY(100%);
-    transition: transform var(--animation);
-    overflow: auto;
-
-    position: absolute;
-    top: 0;
-    left: 0;  
-    .project-link:hover &,
-    .project-link:focus & {
-        transform: translateY(0);
-    } 
-}
 .project-item {
     padding-bottom: 0px;
     margin-bottom: 30px;
@@ -85,6 +60,38 @@
         }
     } 
 }
+.project-top-text {
+    position: absolute;
+    color: var(--primary-white-color);
+
+    @include font (18px, 1.55, 0.03em, 400);
+    padding-left: 24px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    // padding-top: 63px;
+    padding-right: 24px;
+    // padding-bottom: 63px;
+    background-color: var(--top-text);
+    width: 100%;
+    height: 354px;
+    transform: translateY(100%);
+    transition: transform var(--animation);
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;  
+    .project-link:hover &,
+    .project-link:focus & {
+        transform: translateY(0);
+    } 
+    // @media screen and (min-width: 768px){
+    //     width: 354px;
+    // }
+    // @media screen and (min-width: 768px){
+    //     width: 370px; 
+    // }
+}
+
 .project-tittle {
     color: var(--tittle-text-color);
     @include font (18px, 2, 0.06em, 700);
@@ -97,7 +104,7 @@
 }
 .project-item-wrap {
     position: relative;
-    overflow: hidden;  
+    overflow: hidden; 
 }
 .portfolio-card {
     padding-top: 20px;

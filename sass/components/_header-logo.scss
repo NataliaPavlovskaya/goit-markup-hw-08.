@@ -7,7 +7,11 @@
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-right: 93px;
+    margin-right: 88px;
+    @media screen and (min-width: 1200px){
+        margin-right: 93px;
+    }
+    
 }
 .header__logo--black {
     color: var(--logo-color);
