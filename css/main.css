@@ -348,6 +348,13 @@ textarea {
   transform: translateX(100%);
 }
 
+.menu-container .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .menu-container.is-open {
   transform: translateX(0);
   transition: transform var(--animation);
@@ -387,10 +394,6 @@ textarea {
 
 .mob-menu__link:hover, .mob-menu__link:focus {
   color: var(--accent-color);
-}
-
-.mobil-menu {
-  margin-top: 306px;
 }
 
 .mobil-menu__item {
@@ -498,8 +501,6 @@ textarea {
 .hero {
   background-color: var(--background-hero-color);
   height: 400px;
-  margin: auto;
-  padding-bottom: 118px;
   padding-top: 118px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_img.jpg");
@@ -515,7 +516,10 @@ textarea {
 }
 
 .hero .container {
-  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -1477,7 +1481,6 @@ textarea {
 
 .close-icon:hover, .close-icon:focus {
   fill: var(--accent-color);
-  border: var(--accent-color);
 }
 
 .modal-close {

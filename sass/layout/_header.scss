@@ -124,10 +124,19 @@
     padding-left: 40px;
     padding-right: 40px;
     transform: translateX(100%);
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
 }
+
+
 .menu-container.is-open{
     transform: translateX(0);
     transition: transform var(--animation);
+    
     
 }
 .mob-menu__item{
@@ -155,9 +164,9 @@
     color: var(--accent-color);
     }
 }
-.mobil-menu{
-    margin-top: 306px;
-} 
+// .mobil-menu{
+//     margin-top: 306px;
+// } 
 .mobil-menu__item{
     font-family: Roboto;
     @include font (34px, 1.17, 0.02em, 500);

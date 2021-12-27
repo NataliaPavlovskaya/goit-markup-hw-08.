@@ -10,7 +10,6 @@
 }
 .modal {
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
-
     width: 450px;
     min-height: 500px;
     background-color: var(--primary-white-color);
@@ -30,7 +29,6 @@
     &:hover,
     &:focus{
     fill: var(--accent-color);
-    border: var(--accent-color);
     }
 }
 .modal-close {

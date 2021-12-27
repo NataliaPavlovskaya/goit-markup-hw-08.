@@ -2,8 +2,8 @@
     background-color: var(--background-hero-color);
     height: 400px;
     // max-width: 696px;
-    margin: auto;
-    padding-bottom: 118px;
+    // margin: auto;
+    // padding-bottom: 118px;
     padding-top: 118px;
     text-align: center;
 
@@ -28,7 +28,10 @@
     url('../images/heromob_2x.jpg');
   }
     .container {
-        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     } 
     @media screen and (min-width: 768px){
         // max-width: 696px;
