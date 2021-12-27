@@ -500,7 +500,7 @@ textarea {
   height: 400px;
   margin: auto;
   padding-bottom: 118px;
-  padding-top: 128px;
+  padding-top: 118px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_img.jpg");
   background-repeat: no-repeat;
@@ -1317,6 +1317,12 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .footer-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
     height: 86px;
     margin: 0px;
   }
@@ -1345,6 +1351,7 @@ textarea {
 
 .footer-form__block {
   text-align: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1355,7 +1362,7 @@ textarea {
 }
 
 .footer-form__email {
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
   height: 50px;
   font-family: Roboto, sans-serif;
@@ -1372,6 +1379,12 @@ textarea {
   outline: none;
   transition: border var(--animation);
   padding-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__email {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1464,6 +1477,7 @@ textarea {
 
 .close-icon:hover, .close-icon:focus {
   fill: var(--accent-color);
+  border: var(--accent-color);
 }
 
 .modal-close {

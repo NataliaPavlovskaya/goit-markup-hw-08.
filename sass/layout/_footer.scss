@@ -147,6 +147,9 @@
 .footer-form{
     width: 100%;
     @media screen and (min-width: 1200px){
+        width: 450px;  
+      }
+    @media screen and (min-width: 1200px){
         
         // width: 570px;
         height: 86px;
@@ -170,6 +173,8 @@
 }
 .footer-form__block {
     text-align: center;
+    width: 100%;
+    
     @media screen and (min-width: 1200px){
         display: flex;
         justify-content: space-between;
@@ -179,9 +184,13 @@
 }
 
 .footer-form__email {
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
     height: 50px;
+    @media screen and (min-width: 768px){
+        width: 450px;  
+    
+      }
     @media screen and (min-width: 1200px){
       width: 358px;  
       margin-bottom: 0px;
