@@ -30,6 +30,7 @@
     &:hover,
     &:focus{
     fill: var(--accent-color);
+    border: var(--accent-color);
     }
 }
 .modal-close {
