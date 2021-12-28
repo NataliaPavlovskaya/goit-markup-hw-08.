@@ -84,6 +84,7 @@
     position: absolute;
     top: 0;
     left: 0;  
+    overflow-y: scroll;
     .project-link:hover &,
     .project-link:focus & {
         transform: translateY(0);
@@ -103,7 +104,7 @@
     @include font (18px, 2, 0.06em, 700);
 }
 .project-text {
-    font-family: Raleway, cursive ;
+    font-family: Roboto, sans-serif ;
     @include font (16px, 1.87, 0.03em, 400);
     
     color: var(--primary-text-color);

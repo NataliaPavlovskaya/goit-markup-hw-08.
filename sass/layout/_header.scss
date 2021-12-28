@@ -1,5 +1,5 @@
 .header {
-    border: 1px solid var(--header-border-color);
+    border-bottom: 1px solid var(--header-border-color);
     position: relative;
 }
 .container>.header-nav {
@@ -14,7 +14,7 @@
     display: none;
     @media screen and (min-width: 768px){
         display: flex;
-        margin-right: 84px;
+        margin-right: auto;
     }  
 }
 .nav__item {
@@ -78,9 +78,11 @@
 }
 .auth-nav__info {
     color: var(--primary-text-color);
-    &:last-child {
-        margin-bottom: 10px;
-    }
+    padding-top: 5px;
+    padding-bottom: 5px;
+    // &:last-child {
+    //     padding-bottom: 10px;
+    // }
     @include font (12px, 1.14, 0.02em, 500);
     display: flex;
     align-items: center;
@@ -139,6 +141,10 @@
     
     
 }
+.mob-menu{
+    margin-bottom: 10px;
+
+}
 .mob-menu__item{
     font-family: Roboto;
     @include font (40px, 1.17, 0.02em, 500);
@@ -154,6 +160,7 @@
     display: block;
 }
 .mob-menu__link {
+    transition: color var(--animation);
     color: var(--tittle-text-color);
 
     @include font (40px, 1.17, 0.02em, 500);
@@ -169,13 +176,20 @@
 // } 
 .mobil-menu__item{
     font-family: Roboto;
-    @include font (34px, 1.17, 0.02em, 500);
+    font-size: 7vw;
+    line-height: 1.17;
+    letter-spacing: 00.02em;
+    font-weight: 500;
     &:not(:last-child){
         margin-bottom: 32px;
+    }
+    @media screen and (min-width: 480px){
+        @include font (34px, 1.17, 0.02em, 500);
     }
 }
 .mobil-menu__info{
     color: var(--accent-color);
+    
 }
 .mobil-menu__info--mail{
     font-family: Roboto;
@@ -184,7 +198,9 @@
 }
 .menu-social{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
+    padding-bottom: 10px;
 }
 .menu-social__item{
     &:not(:last-child){
@@ -192,19 +208,22 @@
     }
 }
 .menu-social__link{
+
     font-family: Roboto;
     @include font (18px, 1.22, 0.02em, 500);
     color: var(--accent-color);
+    border-right:1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
 }
-.menu-social__link.line::after{
-    content: '';
-    width: 22px;
-    height: 0px;
-    margin-left: 10px;
+// .menu-social__link.line::after{
+//     content: '';
+//     width: 22px;
+//     height: 0px;
+//     
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-}
+//     border: 
+//     transform: rotate(90deg);
+// }
 .menu-toggle{
     display: inline-flex;
     margin-left: auto;
