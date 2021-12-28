@@ -344,6 +344,7 @@ textarea {
   padding-left: 40px;
   padding-right: 40px;
   transform: translateX(100%);
+  pointer-events: none;
 }
 
 .menu-container .container {
@@ -351,6 +352,10 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+.menu-container.open {
+  pointer-events: auto;
 }
 
 .menu-container.is-open {
