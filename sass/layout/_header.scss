@@ -126,7 +126,7 @@
     padding-left: 40px;
     padding-right: 40px;
     transform: translateX(100%);
-    pointer-events: none;
+    // pointer-events: auto;
     .container{
         display:flex;
         flex-direction: column;
@@ -134,9 +134,18 @@
         height: 100%;
     }
 }
-.menu-container.open{
-    pointer-events: auto;
-}
+// .menu-container.close{
+//     pointer-events: none;
+    
+// }
+
+// .header.close .menu-container.open{
+//     pointer-events: auto;
+// }
+
+// .menu-container.open{
+//     pointer-events: auto;
+// }
 
 
 

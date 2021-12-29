@@ -25,25 +25,24 @@
         display: flex;
         justify-content: space-around;
         width: 100%; 
-        margin-bottom: 60px;  
     }
     @media screen and (min-width: 1200px){
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         margin-right: 93px;
+        margin-bottom: 0;
     }
 }
-// .footer-thumb{
-//     @media screen and (min-width: 768px){
-
-//         // margin: 0 auto;
-//     } 
-//     @media screen and (min-width: 1200px) {
-//         // margin-right: 60px; 
-//         // margin: 0px;
-//     } 
-// }
+.footer-thumb{
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px){
+        margin-bottom: 0;
+    } 
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    } 
+}
 .address-list {
     color: var(--primary-white-color);
 
